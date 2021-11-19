@@ -115,7 +115,6 @@ To run the API locally:
 1. In your terminal navigate to the ParkApi folder
 2. run dotnet run
 Then to view the swagger documentation open http://localhost:5000/swagger/
-![Swagger documentation](/images/swagger.png)
 
 User could also utilize Postman to make all the API requests. [Download Postman Here](https://www.postman.com/downloads/)
 
