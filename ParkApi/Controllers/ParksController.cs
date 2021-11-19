@@ -22,7 +22,7 @@ namespace ParkApi.Controllers
 
     // GET: api/Parks
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Movie>>> Get(string name, string type, string city, string state, int rating)
+    public async Task<ActionResult<IEnumerable<Park>>> Get(string name, string type, string city, string state, int rating)
     {
       var query = _db.Parks.AsQueryable();
 
@@ -56,7 +56,7 @@ namespace ParkApi.Controllers
 
     // POST api/Parks
     [HttpPost]
-    public async Task<ActionResult<Park>> Post(ParkApi park)
+    public async Task<ActionResult<Park>> Post(Park park)
     {
       _db.Parks.Add(park);
       await _db.SaveChangesAsync();
